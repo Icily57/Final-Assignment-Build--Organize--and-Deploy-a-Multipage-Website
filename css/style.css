@@ -223,11 +223,32 @@ body.dark {
 .read-more-btn:hover { background: #e64a19; }
 
 /* ===== MENU PAGE ===== */
-.menu-section {
+.menu-section-container {
   padding: 3.5rem 1rem;
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
+  text-align: center;
+  background-image: url("data:image/jpeg;base64,..."); /* keep your image */
+  background-size: cover;
+  background-position: center center; /* keeps the focus in the middle */
+  background-repeat: no-repeat;
+  height: 180vh;
+  position: relative;
+  z-index: 1;
 }
+
+/* Overlay to dim the background */
+.menu-section-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45); /* adjust opacity (0.3 = lighter, 0.6 = darker) */
+  z-index: -1;
+}
+
 .menu-section h1 { font-size: 2.2rem; margin-bottom: .5rem; }
 .menu-section .muted { color: var(--muted, #000); }
 .menu-category { margin: 2.25rem 0; }
@@ -255,10 +276,15 @@ body.dark {
 .contact-page {
   padding: 4rem 2rem;
   text-align: center;
-  background: #227bf0;
+  background-image: url("../images/Logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
 }
 .contact-page h1 {
-  font-size: 2.5rem; margin-bottom: 0.5rem; color: #ff9800;
+  font-size: 2.5rem; margin-bottom: 0.5rem; color: #000;
 }
 .contact-page p { margin-bottom: 2rem; color: #000; }
 .contact-container {
