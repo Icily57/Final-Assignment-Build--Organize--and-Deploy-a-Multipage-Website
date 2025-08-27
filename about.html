@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Sunny Bites</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Shared Header -->
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container nav-container">
+    <h1 class="logo">Sunny Bites</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">🌙</button>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="about-hero-content">
+      <h1>Our Story</h1>
+      <p>At Sunny Bites, we believe food is more than just a meal—it's an experience. 
+      Since our founding in 2010, we’ve been passionate about bringing people together 
+      with fresh flavors, warm hospitality, and unforgettable moments.</p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <div class="mission-content">
+      <h2>🍴 Our Mission</h2>
+      <p>To craft dishes that blend tradition with creativity, sourcing the finest ingredients 
+      while supporting local farmers. We strive to create a welcoming atmosphere where every 
+      guest feels at home.</p>
+    </div>
+  </section>
+
+  <!-- Meet the Team -->
+ <section class="team" id="team">
+  <h2>Meet Our Team</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Chef Antonio">
+          <h3>Chef Antonio</h3>
+          <p>Head Chef</p>
+        </div>
+        <div class="card-back">
+          <h3>Chef Antonio</h3>
+          <p>Antonio is the creative genius behind Sunny Bites’ unique recipes, blending traditional and modern flavors.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Chef Maria">
+          <h3>Chef Maria</h3>
+          <p>Sous Chef</p>
+        </div>
+        <div class="card-back">
+          <h3>Chef Maria</h3>
+          <p>Maria brings passion to every plate, ensuring quality and taste.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Pastry Chef James">
+          <h3>James</h3>
+          <p>Pastry Chef</p>
+        </div>
+        <div class="card-back">
+          <h3>James</h3>
+          <p>James creates desserts that are as beautiful as they are delicious.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Barista Sophia">
+          <h3>Sophia</h3>
+          <p>Barista</p>
+        </div>
+        <div class="card-back">
+          <h3>Sophia</h3>
+          <p>Sophia specializes in artisanal coffee and latte art.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Manager Liam">
+          <h3>Liam</h3>
+          <p>Manager</p>
+        </div>
+        <div class="card-back">
+          <h3>Liam</h3>
+          <p>Liam ensures top-notch service and smooth operations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Waitress Olivia">
+          <h3>Olivia</h3>
+          <p>Waitress</p>
+        </div>
+        <div class="card-back">
+          <h3>Olivia</h3>
+          <p>Olivia is known for her friendly and welcoming service.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Bartender Ethan">
+          <h3>Ethan</h3>
+          <p>Bartender</p>
+        </div>
+        <div class="card-back">
+          <h3>Ethan</h3>
+          <p>Ethan crafts refreshing cocktails and signature drinks.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Team Modal -->
+<div class="team-modal" id="teamModal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modalImage" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalRole"></p>
+    <p id="modalBio"></p>
+  </div>
+</div>
+
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Sunny Bites. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

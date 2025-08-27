@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Café Aroma - Masters Plaza Nakuru</title>
+  <meta name="description" content="Get in touch with Café Aroma in Masters Plaza, Nakuru Kenya. Send us a message or find our location on Google Maps.">
+  <meta name="keywords" content="Café Aroma Nakuru, contact cafe, restaurant Nakuru, Masters Plaza cafe, coffee shop Kenya">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+ <header>
+  <div class="container nav-container">
+    <h1 class="logo">Sunny Bites</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">🌙</button>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- Contact Section -->
+  <main class="contact-page">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Send us a message or find us at our location.</p>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form id="contactForm">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="formResponse"></p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Our Location</h2>
+        <p><strong>Address:</strong> Masters Plaza, Nakuru, Kenya</p>
+        <p><strong>Phone:</strong> +254 700 123 456</p>
+        <p><strong>Email:</strong> info@cafearoma.com</p>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps?q=Masters+Plaza,+Nakuru,+Kenya&output=embed"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+   <footer class="site-footer">
+    <div class="container center">
+      <p class="muted">© <span id="year"></span> Sunny Bites — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Keep only the main script (mobile nav + theme toggle, etc.) -->
+  <script src="js/script.js"></script>
+  <script>
+    // Set year in footer (small snippet)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
